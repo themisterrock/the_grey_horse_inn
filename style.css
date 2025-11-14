@@ -1,0 +1,151 @@
+/* ===========================
+   THE GREY HORSE — Base Stylesheet
+   Atmosphere: parchment + oak
+   =========================== */
+
+/* Reset / base sanity */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: #f7f2e6;
+  color: #3a2f1f;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+
+  /* subtle parchment texture using layered gradients */
+  background: 
+    linear-gradient(rgba(255,255,255,0.05), rgba(0,0,0,0.05)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="%23f7f2e6"/><circle cx="60" cy="70" r="0.5" fill="%23cdc3af"/><circle cx="120" cy="150" r="0.6" fill="%23cdc3af"/></svg>') repeat;
+  background-size: cover;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Garamond', serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  color: #2b2418;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* Layout containers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header (for all pages) */
+header {
+  background: #3a2f1f; /* deep oak brown */
+  color: #f7f2e6;
+  padding: 1rem 0;
+  border-bottom: 4px solid #7c5f3f;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 0;
+  color: #e8d7a7;
+
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #f7f2e6;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 1.1rem;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Soft vintage borders */
+.vintage-box {
+  background: rgba(255, 255, 245, 0.7);
+  border: 1px solid #d6c7ab;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(100, 80, 50, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #7c5f3f;
+  padding: 10px 20px;
+  color: #f7f2e6;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #5f4830;
+}
+
+/* Footer */
+footer {
+  background: #3a2f1f;
+  color: #f7f2e6;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  border-top: 4px solid #7c5f3f;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1rem;
+    margin: 0 8px;
+  }
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+}
