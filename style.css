@@ -24,7 +24,7 @@ body {
       url('images/torn-parchment.png') no-repeat center top,
   
   background-size:
-      1400px auto,  /* torn parchment scale */
+      1500px auto,  /* torn parchment scale */
 
   padding-top: 40px; /* gives breathing room above torn image */
 }
@@ -149,5 +149,6 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
