@@ -19,18 +19,19 @@ body {
   color: #3a2f1f;
   line-height: 1.6;
 
-  /* layered parchment: base + torn page */
+  /* layered parchment: torn parchment as hero, seamless underneath */
   background:
-      url('images/torn-parchment.png') no-repeat center top,
+      url('images/torn-parchment-large.png') no-repeat center top,
       url('images/parchment-base.jpg') repeat;
-  
+
+  /* update these to match the new image size */
   background-size:
-      1200px auto,  /* torn parchment scale */
-      600px;        /* seamless texture scale */
+      2400px auto,   /* torn parchment scale */
+      600px;         /* seamless texture scale */
 
-  padding-top: 40px; /* gives breathing room above torn image */
+  background-attachment: scroll; /* ensures no weird locks on mobile */
+  padding-top: 40px;
 }
-
 
 /* Typography */
 h1, h2, h3, h4 {
@@ -152,6 +153,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
 
