@@ -19,15 +19,18 @@ body {
   color: #3a2f1f;
   line-height: 1.6;
 
-  /* layered parchment: torn page */
+  /* layered parchment: base + torn page */
   background:
       url('images/torn-parchment.png') no-repeat center top,
+      url('images/parchment-base.jpg') repeat;
   
   background-size:
-      1500px auto,  /* torn parchment scale */
+      1200px auto,  /* torn parchment scale */
+      600px;        /* seamless texture scale */
 
   padding-top: 40px; /* gives breathing room above torn image */
 }
+
 
 /* Typography */
 h1, h2, h3, h4 {
@@ -149,6 +152,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
 
