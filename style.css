@@ -105,10 +105,18 @@ nav a:hover {
 
 /* Soft vintage borders */
 .vintage-box {
-  background:
-      url('images/subtle-grain.png') repeat,
-      rgba(255, 248, 235, 0.88);
-  background-size: 300px;
+  background: rgba(255, 248, 235, 0.88); /* warmer, more parchment-like */
+  border: 1px solid #d4c1a5;
+  padding: 2rem;
+  border-radius: 4px;
+
+  /* subtle “raised paper” effect */
+  box-shadow: 
+      0 2px 6px rgba(0, 0, 0, 0.25),
+      inset 0 0 12px rgba(180, 140, 80, 0.15);
+
+  margin-bottom: 2.5rem;
+  backdrop-filter: blur(1px); /* gives it that soft parchment depth */
 }
 
 /* Buttons */
@@ -149,6 +157,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
 
