@@ -21,7 +21,7 @@ body {
 
   /* layered parchment: torn parchment as hero, seamless underneath */
   background:
-      url('images/torn-parchment.jpg') no-repeat center top,
+      url('images/torn-parchment.png') no-repeat center top,
       url('images/parchment-base.jpg') repeat;
 
   /* update these to match the new image size */
@@ -153,6 +153,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
 
