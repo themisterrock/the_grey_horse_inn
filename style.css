@@ -106,6 +106,7 @@ nav a:hover {
 }
 
 .vintage-box {
+  text-align: center;
   background: rgba(255, 248, 235, 0.85);
   padding: 2rem;
   border: 1px solid #d6c7ab;
@@ -169,6 +170,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
 
