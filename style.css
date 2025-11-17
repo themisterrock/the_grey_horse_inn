@@ -26,7 +26,7 @@ body {
 
   /* update these to match the new image size */
   background-size:
-      1800px auto,   /* torn parchment scale */
+      1900px auto,   /* torn parchment scale */
       600px;         /* seamless texture scale */
 
   background-attachment: scroll; /* ensures no weird locks on mobile */
@@ -153,6 +153,7 @@ footer {
     font-size: 1.7rem;
   }
 }
+
 
 
 
